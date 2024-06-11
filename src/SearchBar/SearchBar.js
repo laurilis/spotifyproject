@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './SearchBar.module.css';
+import styles from './SearchBar.module.css';
 
 
 function SearchBar() {
@@ -8,20 +8,19 @@ function SearchBar() {
 
 
 
-    const handleInputChange = (e) => {
+    const handleUserInput = (e) => {
         setInput(e.target.value)
     };
 
     return (
-        <div className='SearchBar'>
+        <div className={styles.SearchBar}>
               <input 
-                
                 type="text" 
                 value={input}
-                onChange={handleInputChange} 
+                onChange={handleUserInput} 
             />
             <button 
-                className="SearchButton" 
+                className={styles.SearchButton} 
             >Search</button>
         </div>
     )
@@ -29,3 +28,4 @@ function SearchBar() {
 };
 
 export default SearchBar;
+
