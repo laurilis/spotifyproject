@@ -1,22 +1,12 @@
 
 import './App.css';
+import SearchBar from '../SearchBar/SearchBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to test.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>ja<span className='highlight'>mmm</span>ing</h1>
+      <SearchBar />
     </div>
   );
 }
