@@ -6,14 +6,13 @@ import styles from './SearchResults.module.css';
     
         function SearchResults(props) {
         
+            const mustBe = props.input;
         
-            const filteredTracks = Tracklist.filter(track => 
+            const filteredTracks = mustBe.length >= 3 ? Tracklist.filter(track => 
                 track.title.toLowerCase().includes(props.input.toLowerCase()) || 
                 track.artist.toLowerCase().includes(props.input.toLowerCase()) || 
                 track.album.toLowerCase().includes(props.input.toLowerCase())
-            );
-
-            if(props.input === '') 
+            ) : [];
 
            
                 return (
