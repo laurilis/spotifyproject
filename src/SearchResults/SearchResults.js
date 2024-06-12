@@ -1,40 +1,43 @@
 import Tracklist from '../Tracklist/Tracklist';
 import styles from './SearchResults.module.css';
+import Track from '../Track/Track';
 
 
 
     
-        function SearchResults(props) {
+        function SearchResults({input}) {
         
-            const mustBe = props.input;
+            const mustBe = input.toLowerCase();
         
             const filteredTracks = mustBe.length >= 3 ? Tracklist.filter(track => 
-                track.title.toLowerCase().includes(props.input.toLowerCase()) || 
-                track.artist.toLowerCase().includes(props.input.toLowerCase()) || 
-                track.album.toLowerCase().includes(props.input.toLowerCase())
+                track.title.toLowerCase().includes(mustBe.toLowerCase()) || 
+                track.artist.toLowerCase().includes(mustBe.toLowerCase()) || 
+                track.album.toLowerCase().includes(mustBe.toLowerCase())
             ) : [];
 
            
                 return (
+                  <div className={styles.container}>
                     <div className={styles.SearchResults}>
-                        <ul>
+                        <h2>Results</h2>
+                        
                             {filteredTracks.map((track, index) => (
-                                <li key={index}>
-                                    <h3>{track.title}</h3>
-                                    <p>{track.artist}</p>
-                                    <p>{track.album}</p>
-                                </li>
+                               
+                               <div key={index}   className={styles.fixButton}>
+                                     <Track title={track.title} artist={track.artist} 
+                                        album={track.album}
+                                    
+                                         />
+                                    <button className={styles.addButton}>+</button>
+                                </div>
+                                
+                    
                             ))}
-                        </ul>
+                            
+                    
                     </div>
-                );
-            
-
-        
-        
-            
-
-
+                    </div>
+                )
         };
 
-        export default SearchResults;
+export default SearchResults;

@@ -1,14 +1,14 @@
+import styles from './Track.module.css';
 
-function Track(props) {
+
+function Track({title, artist, album}) {
     return (
-        <>
-        <h1>props.name</h1>
-        <ul>
-            <li>props.artist</li>
-            <li>props.album</li>
-        </ul>
-        </>
+        <div>
+        <h3>{title}</h3>
+        <p> {artist} | {album}           
+        </p>
+        </div>
     )};
     
 
-export default Track
+export default Track;
