@@ -15,6 +15,7 @@ import Track from '../Track/Track';
                 track.album.toLowerCase().includes(mustBe.toLowerCase())
             ) : [];
 
+            const handleClick = () => {};
            
                 return (
                   <div className={styles.container}>
