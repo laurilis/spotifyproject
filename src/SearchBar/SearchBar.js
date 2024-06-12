@@ -8,20 +8,22 @@ function SearchBar(props) {
     const [ currentInput, setCurrentInput ] = useState('');
 
     const handleInputChange = (e) => {
-        setCurrentInput(props.onSearch(e.target.value))
+        const name = e.target.value;
+        setCurrentInput(name);
+        props.onSearch(currentInput);
     };
 
     return (
         <div className={styles.SearchBar}>
-              <input 
+              <input  
                 type="text" 
-                value={props.input}
+                value={currentInput}
                 onChange={handleInputChange} 
             />
             <button 
                 className={styles.SearchButton} 
                 onClick={() => props.onSearch(currentInput)} 
-            >Search</button>
+            >SearchySearch</button>
         </div>
     )
 
