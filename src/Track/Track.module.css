@@ -35,3 +35,31 @@
     font-weight: 300;
     color: rgba(256, 256, 256, 0.8);
   }
+
+  .addButton {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: rgba(108, 65, 233, .7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    background-color: #9369b8;}
+
+.container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+  }
+
+ .fixButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }

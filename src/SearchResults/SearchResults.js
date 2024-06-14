@@ -1,3 +1,4 @@
+import React from 'react';
 import Tracklist from '../Tracklist/Tracklist';
 import styles from './SearchResults.module.css';
 import Track from '../Track/Track';
@@ -5,7 +6,7 @@ import Track from '../Track/Track';
 
 
     
-        function SearchResults({input}) {
+        function SearchResults({input, onAddToPlaylist}) {
         
             const mustBe = input.toLowerCase();
         
@@ -18,18 +19,20 @@ import Track from '../Track/Track';
             const handleClick = () => {};
            
                 return (
-                  <div className={styles.container}>
+                  
                     <div className={styles.SearchResults}>
                         <h2>Results</h2>
                         
                             {filteredTracks.map((track, index) => (
                                
-                               <div key={index}   className={styles.fixButton}>
-                                     <Track title={track.title} artist={track.artist} 
+                               <div key={index} >
+                                     <Track 
+                                        title={track.title} 
+                                        artist={track.artist} 
                                         album={track.album}
-                                    
+                                        onAdd={() => onAddToPlaylist(track)}
                                          />
-                                    <button className={styles.addButton}>+</button>
+                                    
                                 </div>
                                 
                     
@@ -37,7 +40,7 @@ import Track from '../Track/Track';
                             
                     
                     </div>
-                    </div>
+                    
                 )
         };
 
