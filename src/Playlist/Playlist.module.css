@@ -1,26 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+SK&display=swap');
+
 .Playlist {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: scroll;
-    width: 37%;
-    max-height: 950px;
-    padding: 2.27rem 1.16rem;
-    background-color: rgba(1, 12, 63, 0.7);
-    box-shadow: 0 4px 2px 2px #000000;
-  }
-  
+  width: 100%;
+  height: 50vh;
+  padding: .88rem;
+  overflow-y: scroll;
+  background-color: rgba(1, 12, 63, 0.7);
+  box-shadow: 0 4px 2px 2px #000000;
+}
   .Playlist input {
     width: 100%;
     border: 0;
     outline: 0;
     background: transparent;
     border-bottom: 1px solid #6f6f6f;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'PlayWrite SK', sans-serif;
     font-size: 1.55rem;
     color: #fff;
   }
+
+  .Playlist p {
+    color: rgba(194, 184, 224, 0.7);
+  }
+
+  .removeButton {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: rgba(108, 65, 233, .7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
   
+.removeButton:hover {
+  background-color: #9369b8;}
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #fff;
+}
+
+.trackInfo {
+  flex-grow: 1;
+}
+
+
   .save {
     cursor: pointer;
     width: 10rem;

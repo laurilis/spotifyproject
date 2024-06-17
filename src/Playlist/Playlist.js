@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Playlist.module.css';
 
-function Playlist ({ tracks, onNameChange, onSave }) {
+function Playlist ({ tracks, onNameChange, onSave, onRemove }) {
 
     const [ playlistName, setPlaylistName ] = useState('');
     
@@ -16,13 +16,16 @@ function Playlist ({ tracks, onNameChange, onSave }) {
             type="text" 
             value={playlistName} 
             onChange={handleNameChange} 
-            placeholder="Enter Playlist Name" ></input>
-        <div>
+            placeholder="Invent Playlist Name" />
+        <div className={styles.container}>
             {tracks.map((track, index) => (
                 <div key={index} className={styles.track}>
-                <h3>{track.title}</h3>
-                <p>{track.artist} | {track.album}</p>
+                    <div>
+                    <h3>{track.title}</h3>
+                    <p>{track.artist} | {track.album}</p>  </div>
+                <button onClick={() => onRemove(track)} className={styles.removeButton}>-</button>             
             </div>
+           
             ))}
         </div>
 

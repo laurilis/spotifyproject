@@ -19,6 +19,7 @@ function SearchBar(props) {
                 type="text" 
                 value={currentInput}
                 onChange={handleInputChange} 
+                placeholder="Search for song, artist or album"
             />
             <button 
                 className={styles.SearchButton} 

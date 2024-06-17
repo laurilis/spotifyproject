@@ -4,7 +4,7 @@ html,
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 html {
@@ -44,8 +44,10 @@ h2 {
 
 .App-playlist {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 1rem;
   width: 100%;
+  gap: 4rem;
 }
 
 @media only screen and (max-width: 1020px) {

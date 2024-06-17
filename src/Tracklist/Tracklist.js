@@ -14,6 +14,11 @@ const Tracklist = [
         title:  'Cuarto de Tula',
         artist:  'Buena Vista Social Club',
         album: 'Buena Vista Classics'    
+    },
+    {
+        title:  'Quizás, quizás, quizás...',
+        artist:  'Laurel Aitken',
+        album: 'Ska Classics'    
     }
 
 ]

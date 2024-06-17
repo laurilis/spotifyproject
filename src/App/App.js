@@ -22,6 +22,10 @@ function App() {
     });
 };
 
+const handleRemoveFromPlaylist = (track) => {
+  setPlaylistTracks(playlistTracks.filter((t) => t.title !== track.title && t.artist !== track.artist) )
+};
+
 const handleNameChange = (name) => {
     setPlaylistName(name);
 };
@@ -34,11 +38,14 @@ const handleSavePlaylist = () => {
     <div className="App">
       <h1>ja<span className='highlight'>mmm</span>ing</h1>
       <SearchBar onSearch={handleSearch} />
-      <SearchResults input={input} onAddToPlaylist={handleAddToPlaylist}/>
-      <Playlist 
-        tracks={playlistTracks} 
-        onNameChange={handleNameChange} 
-        onSave={handleSavePlaylist}  />
+      <div className='App-playlist'>
+        <SearchResults input={input} onAddToPlaylist={handleAddToPlaylist}/>
+        <Playlist 
+          tracks={playlistTracks} 
+          onNameChange={handleNameChange} 
+          onSave={handleSavePlaylist}
+          onRemove={handleRemoveFromPlaylist}  />
+        </div>
      
     </div>
   );
