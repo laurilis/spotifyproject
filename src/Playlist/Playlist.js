@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Playlist.module.css';
 
 function Playlist ({ tracks, onNameChange, onSave, onRemove }) {
 
     const [ playlistName, setPlaylistName ] = useState('');
     
+    useEffect(() => {
+        setPlaylistName('');
+    }, [tracks]);
+
     const handleNameChange = (e) =>
         {setPlaylistName(e.target.value);
             onNameChange(e.target.value);
+        };
+    
+    const handleSave = () => {
+            onSave(() => setPlaylistName('')); // Reset the playlist name after saving
         };
 
     return (

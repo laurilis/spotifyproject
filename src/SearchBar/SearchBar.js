@@ -3,14 +3,14 @@ import styles from './SearchBar.module.css';
 
 
 
-function SearchBar(props) { 
+function SearchBar({ onSearch, authenticate }) { 
 
     const [ currentInput, setCurrentInput ] = useState('');
 
     const handleInputChange = (e) => {
         const name = e.target.value;
         setCurrentInput(name);
-        props.onSearch(currentInput);
+        onSearch(name);
     };
 
     return (
@@ -23,8 +23,9 @@ function SearchBar(props) {
             />
             <button 
                 className={styles.SearchButton} 
-                onClick={() => props.onSearch(currentInput)} 
-            >SearchySearch</button>
+                onClick={authenticate} //vorher props.onSearch(currentInput) 
+            >Login to Spotify</button>
+        
         </div>
     )
 

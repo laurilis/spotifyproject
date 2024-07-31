@@ -1,7 +1,10 @@
+import React from 'react';
 import styles from './Track.module.css';
 
-
 function Track({title, artist, album, onAdd}) {
+
+     console.log('Track props:', { title, artist, album }); // Log props
+
     return (
         <div className={styles.container} className={styles.fixButton}>
             <div >
@@ -15,4 +18,4 @@ function Track({title, artist, album, onAdd}) {
     )};
     
 
-export default Track;
+export default Track; 
