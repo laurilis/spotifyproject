@@ -1,6 +1,6 @@
-# Spotify Playlist Exporter
+# jammming
 
-Spotify Playlist Exporter is a web application that allows users to search for songs, create playlists, and export them directly to their Spotify account.
+jammming is a web application that allows users to search for songs, create playlists, and export them directly to their Spotify account.
 
 ## Table of Contents
 
