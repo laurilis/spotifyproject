@@ -4,10 +4,19 @@ jammming is a web application that allows users to search for songs, create play
 
 ## Table of Contents
 
+- [Purpose](#purpose)
+- [Technologies](#technologies)
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Future](#future)
+
+## Purpose
+The purpose of this project is to show that I am capable of using React (and GitHub). No other purpose seems to exist. This Web App does not seem to be needed.
+
+## Technologies
+This project was built using React, GitHub and Visual Studio Code. Who would have guessed!
 
 ## Features
 
@@ -60,3 +69,5 @@ To run the application locally, follow these steps:
 4. **Export Playlist**: 
     Save the playlist to your Spotify account by clicking the "Save to Spotify" button.
 
+## Future
+For the moment no future work regarding the Spotify jammming project is desired. I am glad this hell has come to an end. Possibly the project will be optimized as it is functional but not perfect (I am sure).
