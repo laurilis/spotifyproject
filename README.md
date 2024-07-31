@@ -18,7 +18,7 @@ jammming is a web application that allows users to search for songs, create play
 
 ## Demo
 
-Check out the live demo of the application here: [Spotify Playlist Exporter](https://laurilis.github.io/spotifyproject)
+Check out the live demo of the application here: [jammming](https://laurilis.github.io/spotifyproject)
 
 ## Installation
 
