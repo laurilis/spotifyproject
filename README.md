@@ -55,7 +55,7 @@ To run the application locally, follow these steps:
     Use the search bar to find your favorite songs.
 
 3. **Create Playlist**:    
-    Add songs to your playlist and give it a name.
+    Add songs to or remove from your playlist and give it a name.
 
 4. **Export Playlist**: 
     Save the playlist to your Spotify account by clicking the "Save to Spotify" button.
