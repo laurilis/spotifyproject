@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/spotifyproject/static/css/main.ec0378b1.css",
+    "main.js": "/spotifyproject/static/js/main.17d74bdf.js",
+    "static/js/453.af2ec79b.chunk.js": "/spotifyproject/static/js/453.af2ec79b.chunk.js",
+    "static/media/background_photo_desktop.jpg": "/spotifyproject/static/media/background_photo_desktop.a0687f3fe6f1303a2d18.jpg",
+    "index.html": "/spotifyproject/index.html",
+    "main.ec0378b1.css.map": "/spotifyproject/static/css/main.ec0378b1.css.map",
+    "main.17d74bdf.js.map": "/spotifyproject/static/js/main.17d74bdf.js.map",
+    "453.af2ec79b.chunk.js.map": "/spotifyproject/static/js/453.af2ec79b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec0378b1.css",
+    "static/js/main.17d74bdf.js"
+  ]
+}
